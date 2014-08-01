@@ -9,8 +9,6 @@
 myButLast :: [a] -> a
 myButLast [x,y] = x
 myButLast ( _ : xs ) = myButLast xs
-myButLast :: [a] -> a
-myButLast = last . init
 
 -- Solution 
   -- Pattern matching on generic list then wildcard match
